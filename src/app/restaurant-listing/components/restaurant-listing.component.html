@@ -1,9 +1,9 @@
 
 <main class="main-content my-gap" >
     <div class="restaurant-grid">
-        <div class="restaurant-card" *ngFor="let restaurant of restaurantList">
+        <div class="restaurant-card" *ngFor="let restaurant of restaurantList; index as i">
           <div class="restaurant-image">
-            <img [src]="'assets/restaurant-pics/' + getRandomImage()" alt="Restaurant 1">
+            <img [src]="'assets/restaurant-pics/' + i%8 + '.jpg'" alt="Restaurant 1">
           </div>
           <div class="restaurant-details">
             <h3 class="restaurant-name">{{restaurant.name}}</h3>

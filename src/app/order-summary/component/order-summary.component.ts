@@ -22,7 +22,7 @@ export class OrderSummaryComponent {
     this.obj = JSON.parse(data);
     this.obj.userId=1;
     this.orderSummary = this.obj;
-
+    
     this.total = this.orderSummary.foodItemsList.reduce((accumulator, currentValue) => {
       return accumulator + (currentValue.quantity * currentValue.price);
     }, 0);

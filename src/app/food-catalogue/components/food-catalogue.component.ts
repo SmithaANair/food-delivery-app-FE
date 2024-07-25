@@ -34,6 +34,7 @@ export class FoodCatalogueComponent {
     this.foodItemService.getFoodItemsByRestaurant(restaurant).subscribe(
       data => {
         this.foodItemResponse = data;
+        
       }
     )
   }
@@ -75,8 +76,5 @@ export class FoodCatalogueComponent {
     this.orderSummary.restaurant = this.foodItemResponse.restaurant;
     this.router.navigate(['/orderSummary'], { queryParams: { data: JSON.stringify(this.orderSummary) } });
   }
-
-
-
 
 }

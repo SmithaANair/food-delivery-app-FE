@@ -5,3 +5,10 @@
 
 export const K8ExternalIp = 'http://k8s-default-awsingre-3d4b7f90d4-122545836.eu-west-3.elb.amazonaws.com';
 
+export const RESTAURANT_SERVICE = 'http://localhost:9091';
+
+export const USER_SERVICE = 'http://localhost:9093';
+
+export const FOOD_CATALOGUE_SERVICE = 'http://localhost:9092';
+
+export const ORDER_SERVICE = 'http://localhost:9094';
